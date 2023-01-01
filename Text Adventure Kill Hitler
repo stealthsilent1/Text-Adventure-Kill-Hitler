@@ -4,6 +4,9 @@
 
 int main(){
     
+    for(int i=0; i<20; i++){
+        
+    
     int Hit;
     
     srand(time(NULL));
@@ -97,5 +100,30 @@ int main(){
     
     std::cout<< " \n";
     std::cout<< " \n";
+    
+    std::cout<< "Do you want to play again?\n";
+    std::cout<< "1) Yes\n2) No\n";
+    int playAgain;
+    std::cin>>playAgain;
+    if(playAgain == 2){
+    
     return 0;
+    }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
