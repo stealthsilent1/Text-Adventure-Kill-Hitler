@@ -31,7 +31,7 @@ int main(){
     if(Hit == 1){
         int GhengisKhanKill = rand()%2;
         if(GhengisKhanKill == 1){
-            std::cout<< "You walk into the hut of a pleasant village woman. You're high tech\n";
+            std::cout<< "You walk into the hut of a pleasant village woman. Your high tech\n";
             std::cout<< "gear scares her... It's almost too easy.\n\n";
             std::cout<< "You did the deed, history is saved. The future is a bright basket of\n";
             std::cout<< "hope... or so you think. You travel back to the present and it is as if you have\n";
