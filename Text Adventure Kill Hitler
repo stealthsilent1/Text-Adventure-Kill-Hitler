@@ -74,16 +74,16 @@ int main(){
             std::cout<< "You arrive in a large room in the country of Germany, there\n";
             std::cout<< "is such a nice view of the surrounding mountains. Around you are guards\n";
             std::cout<< "which quickly spot you in your future clothes. They call out 'Hault!'\n";
-            std::cout<< "You have to react, what do you do?\n";
+            std::cout<< "You have to react, what do you do?\n\n";
             int choice;
             std::cout<< "1) Run into the Bushes \n2) Let them arrive\n";
             std::cin>>choice;
             if(choice == 1){
-                std::cout<< "You quickly run around a building into a bush and hope they don't\n";
+                std::cout<< "\n You quickly run around a building into a bush and hope they don't\n";
                 std::cout<< "find you. They are not stupid, they spot you and shoot the bush you are in.\n";
                 std::cout<< "It hurts...\n";
             }else if(choice == 2){
-                std::cout<< "You let them walk up to you, Not knowing the language, you have\n";
+                std::cout<< "\n You let them walk up to you, Not knowing the language, you have\n";
                 std::cout<< "no response. They take you into captivity where you are probed for information\n";
                 std::cout<< "about the enemy until the end of the war. They don't feed you,\n";
                 std::cout<< "You are so hungry. You manage to get back to your machine after 6 years,\n";
