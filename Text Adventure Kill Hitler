@@ -102,6 +102,7 @@ int main(){
     std::cout<< " \n";
     
     std::cout<< "Do you want to play again?\n";
+    std::cout<< "Hint: Be sure to play through the game multiple times, each storyline is randomly generated; play enough times, you'll get a different ending!\n";
     std::cout<< "1) Yes\n2) No\n";
     int playAgain;
     std::cin>>playAgain;
