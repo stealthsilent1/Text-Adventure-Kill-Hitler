@@ -3,6 +3,7 @@
 #include <ctime>
 #include <vector>
 
+
 int numOfEndingsDone(std::vector<bool> EndingList){
     int endingsDone = 0;
         for(int x = 0;x < EndingList.size();x++){
@@ -19,15 +20,17 @@ int main(){
     
     
     int PlaythroughNumber;
-    bool GhengisKhanEnding1;
-    bool GhengisKhanEnding2;
+    bool GhengisKhanEnding1 = false;
+    bool GhengisKhanEnding2 = false;
+    bool GhengisKhanEnding3 = false;
     bool HitlerEnding1;
     bool HitlerEnding2;
     bool HitlerEnding3;
     bool HitlerEnding4;
     bool StalinEnding1;
-    std::vector <bool> EndingList = {};
-    EndingList.reserve(20);
+    // add additional storylines to list
+    std::vector<bool> EndingList = {GhengisKhanEnding1,GhengisKhanEnding2,GhengisKhanEnding3,HitlerEnding1,HitlerEnding2,HitlerEnding3,HitlerEnding4,StalinEnding1};
+    
     
     
     for(int PlaythroughNumber=0; PlaythroughNumber<20; PlaythroughNumber++){
@@ -52,22 +55,28 @@ int main(){
         std::cout<< "in a secret government facilitiy... one that makes time machines. \n";
         std::cout<< "You gain enough trust to be in charge of the facility... \n \n";
 
-        std::cout<< "And you Steal The Machine and RE-WRITE HISTORY! \n\n";
+        std::cout<< "And you Steal The Machine and RE-WRITE HISTORY! \n\n\n";
 
-        std::cout<< "         BLAST FROM THE FUTURE!        \n";
-        std::cout<<"Brighten Humanity's future, FROM THE PAST!  \n";
+        std::cout<< "                      BLAST FROM THE FUTURE!        \n";
+        std::cout<<"              Brighten Humanity's future, FROM THE PAST!  \n\n\n";
     
     }
-    std::cout<< "\nYou are a time traveler.\n\n";
+    std::cout<< "\n...You are a time traveler.\n\n";
     std::cout<< "You have traveled back into the past to kill a major historical figure in order to rewrite history into a better future.\n";
     std::cout<< "Who do you choose to kill?\n\n";
     std::cout<< "1) Ghengis Khan.\n";
     std::cout<< "2) Hitler.\n";
     std::cout<< "3) Stalin.\n\n";
     std::cout<< "Type a number 1-3\n";
+    
+    //debug lines
+    //std::cout<< "\n\n\n";
+    //std::cout<< "ending bools for ghengis 1,2,3 are: " << GhengisKhanEnding1 << GhengisKhanEnding2 <<GhengisKhanEnding3 << "\n";
+    
+    
     std::cin>>Hit;
     
-    
+    GhengisKhanEnding1 = true;
     
     std::cout<< "\nYour machine is one you stole out of a government lab. In your escape \n";
     std::cout<< "the machine was damaged. You have to rely on the guidance of the computer \n";
@@ -75,11 +84,20 @@ int main(){
     std::cout<< "You type into the computer the Time and Place where you wish to go.\n\n";
     
     if(Hit == 1){
-        int GhengisKhanKill = rand()%2;
-        if(GhengisKhanKill == 1){
+        int GhengisKhanKill = rand()%3;
+        
+        //debug code
+        //std::cout<< "Ghengis khan number is: " << GhengisKhanKill << "\n\n";
+        if(GhengisKhanKill == 0){
             
-            bool GhengisKhanEnding1 = true;
-            EndingList.push_back(GhengisKhanEnding1);
+            
+            GhengisKhanEnding1 = true;
+            EndingList[0] = true;
+            
+            //debug code
+            //std::cout<< "Ending bool for 1 is: " << GhengisKhanEnding1 << "\n";
+           
+            
             
             std::cout<< "You walk into the hut of a pleasant village woman. Your high tech\n";
             std::cout<< "gear scares her... It's almost too easy.\n\n";
@@ -95,22 +113,42 @@ int main(){
 
             std::cout<< "You venture forth to become a Geneticist and rewrite what should of been\n";
             std::cout<< "corrected a long time ago.\n";
-        }else if(GhengisKhanKill == 2){
             
-            bool GhengisKhanEnding2 = true;
-            EndingList.push_back(GhengisKhanEnding2);
+        } 
+        
+        if(GhengisKhanKill == 1){
+            
+            GhengisKhanEnding2 = true;
+            EndingList[1] = true;
+            
+            //debug code
+            //std::cout<< "ENding bool for 2 is: " << GhengisKhanEnding2 << "\n";
             
             std::cout<< "You are too late, he has lived his life and is a dying old man.\n";
             std::cout<< "You Recalibrate your machine to get it right this time...\n";
         }
-        
-        
-    }else if(Hit == 2){
-        int HitlerKill = rand()%2;
-        if(HitlerKill == 1){
+        if (GhengisKhanKill == 2) {
             
-            bool HitlerEnding1 = true;
-            EndingList.push_back(HitlerEnding1);
+            GhengisKhanEnding3 = true;
+            EndingList[2] = true;
+            
+            std::cout<< "ENding bool for 3 is: " << GhengisKhanEnding3 << "\n";
+            
+            std::cout << "You find yourself deep in the wilderness, tracking the legendary Ghengis Khan.\n";
+            std::cout << "After weeks of searching, you finally catch up to him, but he is surrounded\n";
+            std::cout << "by his most trusted advisors and soldiers. In a fierce battle, you are killed.\n\n";
+            }
+    }
+        
+        
+    else if(Hit == 2){
+        int HitlerKill = rand()%2;
+        if(HitlerKill == 0){
+            
+            
+            HitlerEnding1 = true;
+            EndingList[3] = true;
+            
             
             std::cout<< "You walk into a dormatory of a university, you see a quiet boy\n";
             std::cout<< "drawing on a board, it appears to be of a woman. There is a large rock\n";
@@ -128,10 +166,10 @@ int main(){
 
             std::cout<< "You venture forth to become a Geneticist and rewrite what should of been\n";
             std::cout<< "corrected a long time ago.\n";
-        }else if(HitlerKill = 2){
+        }else if(HitlerKill = 1){
             
-            bool HitlerEnding2 = true;
-            EndingList.push_back(HitlerEnding2);
+            HitlerEnding2 = true;
+            EndingList[4] = true;
             
             std::cout<< "You arrive in a large room in the country of Germany, there\n";
             std::cout<< "is such a nice view of the surrounding mountains. Around you are guards\n";
@@ -142,16 +180,16 @@ int main(){
             std::cin>>choice;
             if(choice == 1){
                 
-                bool HitlerEnding3 = true;
-                EndingList.push_back(HitlerEnding3);
+                HitlerEnding3 = true;
+                EndingList[5] = true;
                 
                 std::cout<< "\n You quickly run around a building into a bush and hope they don't\n";
                 std::cout<< "find you. They are not stupid, they spot you and shoot the bush you are in.\n";
                 std::cout<< "It hurts...\n";
             }else if(choice == 2){
                 
-                bool HitlerEnding4 = true;
-                EndingList.push_back(HitlerEnding4);
+                HitlerEnding4 = true;
+                EndingList[6] = true;
                 
                 std::cout<< "\n You let them walk up to you, Not knowing the language, you have\n";
                 std::cout<< "no response. They take you into captivity where you are probed for information\n";
@@ -165,8 +203,8 @@ int main(){
         }
     }else if(Hit == 3){
         
-        bool StalinEnding1 = true;
-        EndingList.push_back(StalinEnding1);
+        StalinEnding1 = true;
+        EndingList[7] = true;
         
         std::cout<< "You arrive in russia, your machine has sent you into the wilderness,\n";
         std::cout<< "You die of frostbite. Russian winters always win.\n";
@@ -180,9 +218,10 @@ int main(){
     std::cout<< "Do you want to play again?\n\n";
     std::cout<< "1) Yes\n2) No\n\n";
     
+    //debug lines
+    //std::cout<< "Ending list status: " << EndingList[0]<< EndingList[1] << EndingList[2] << EndingList[3] << EndingList[4] << EndingList[5] << EndingList[6];
     
-    
-    std::cout<< "You have completed: " << numOfEndingsDone(EndingList) << "/7"  << " Endings\n";
+    std::cout<< "You have completed: " << numOfEndingsDone(EndingList) << "/8"  << " Endings\n";
     int playAgain;
     std::cin>>playAgain;
     if(playAgain == 2){
