@@ -3,15 +3,36 @@
 #include <ctime>
 
 int main(){
+    int PlaythroughNumber;
     
-    for(int i=0; i<20; i++){
+    for(int PlaythroughNumber=0; PlaythroughNumber<20; PlaythroughNumber++){
         
     
     int Hit;
     
     srand(time(NULL));
     
+    if (PlaythroughNumber<1){
+        std::cout<< " The year is 2200, people are cattle and life is like being in a \n";
+        std::cout<< "prison. There are no families. People are made for thier meat, \n";
+        std::cout<< "as the rich love eating tough human meat.  \n\n";
+
+        std::cout<< "You are born into a rich family and grow up with this madness. \n";
+        std::cout<< "As you learn enough about this world, you swear to change it  \n";
+        std::cout<< "into what people of the year 2000 thought was the future.  \n";
+        std::cout<< "Small families living in small communities, drawing and spending \n";
+        std::cout<< "time loving each other and exploring. You dedicate your life to change  \n";
+        std::cout<< "it. You learn the modern science of your day and master it... \n\n";
+        std::cout<< "By 60 years old you have mastered it, you get a job as a researcher \n";
+        std::cout<< "in a secret government facilitiy... one that makes time machines. \n";
+        std::cout<< "You gain enough trust to be in charge of the facility... \n \n";
+
+        std::cout<< "And you Steal The Machine and RE-WRITE HISTORY! \n\n";
+
+        std::cout<< "         BLAST FROM THE FUTURE!        \n";
+        std::cout<<"Brighten Humanity's future, FROM THE PAST!  \n";
     
+    }
     std::cout<< "\nYou are a time traveler.\n\n";
     std::cout<< "You have traveled back into the past to kill a major historical figure in order to rewrite history into a better future.\n";
     std::cout<< "Who do you choose to kill?\n\n";
@@ -101,8 +122,8 @@ int main(){
     std::cout<< " \n";
     std::cout<< " \n";
     
-    if(i < 1){
-    std::cout<< "Hint: Be sure to play through the game multiple times, each storyline is randomly generated; play enough times, you'll get a different ending!\n";}
+    if(PlaythroughNumber < 1){
+    std::cout<< "Hint: Be sure to play through each storyline multiple times, each storyline is randomly generated; if you play enough times, you'll get a different ending!\n";}
     std::cout<< "Do you want to play again?\n";
     std::cout<< "1) Yes\n2) No\n";
     int playAgain;
@@ -114,18 +135,3 @@ int main(){
     }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
