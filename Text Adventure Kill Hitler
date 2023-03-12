@@ -182,7 +182,7 @@ int main(){
     
     
     
-    std::cout<< "You have gotten: " << numOfEndingsDone(EndingList) << "/7"  << " Endings\n";
+    std::cout<< "You have completed: " << numOfEndingsDone(EndingList) << "/7"  << " Endings\n";
     int playAgain;
     std::cin>>playAgain;
     if(playAgain == 2){
