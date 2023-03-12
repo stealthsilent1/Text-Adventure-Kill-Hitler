@@ -45,17 +45,17 @@ int main(){
         std::cout<< "is like being in a prison. There are no families. People are  \n";
         std::cout<< "made for thier meat, as the rich love eating tough human meat.  \n\n";
 
-        std::cout<< "You are born into a rich family and grow up with this madness. \n";
-        std::cout<< "As you learn enough about this world, you swear to change it  \n";
-        std::cout<< "into what people of the year 2000 thought was the future.  \n";
+        std::cout<< "You were born into a rich family and grew up with this madness. \n";
+        std::cout<< "As you learnt enough about this world, you swore to change it  \n";
+        std::cout<< "into what people of the year 2000 thought was Utopia:  \n";
         std::cout<< "Small families living in small communities, drawing and spending \n";
-        std::cout<< "time loving each other and exploring. You dedicate your life to change  \n";
-        std::cout<< "it. You learn the modern science of your day and master it... \n\n";
-        std::cout<< "By 60 years old you have mastered it, you get a job as a researcher \n";
+        std::cout<< "time loving each other and leisuring. You dedicated your life to change  \n";
+        std::cout<< "it. You learnt the modern science of your day and mastered it... \n\n";
+        std::cout<< "By 60 years old you mastered it, you got a job as a researcher \n";
         std::cout<< "in a secret government facilitiy... one that makes time machines. \n";
         std::cout<< "You gain enough trust to be in charge of the facility... \n \n";
 
-        std::cout<< "And you Steal The Machine and RE-WRITE HISTORY! \n\n\n";
+        std::cout<< "           And you Steal The Machine and RE-WRITE HISTORY! \n\n\n";
 
         std::cout<< "                      BLAST FROM THE FUTURE!        \n";
         std::cout<<"              Brighten Humanity's future, FROM THE PAST!  \n\n\n";
